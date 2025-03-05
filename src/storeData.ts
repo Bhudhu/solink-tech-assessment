@@ -1,7 +1,7 @@
 import { query } from "./db";
 import { fetchSolcastData } from "./fetchData";
 
-const storeData = async () => {
+export const storeData = async () => {
   const data = await fetchSolcastData();
   if (!data) return;
 
