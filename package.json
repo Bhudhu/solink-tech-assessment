@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/cronJob.js"
+    "start": "npm run build && node dist/cronJob.js",
+    "build": "tsc",
+    "heroku-postbuild": "npm run build"
 
   },
   "repository": {
